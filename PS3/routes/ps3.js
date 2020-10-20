@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+/* GET ps3 */
 router.route('/')
     .get((req, res, next) => {
         res.render('ps3', { string: 'ABDUL\'S NODE APPLICATION'})
