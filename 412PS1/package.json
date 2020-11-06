@@ -1,0 +1,23 @@
+{
+  "name": "ps1",
+  "version": "1.0.0",
+  "description": "problem set 1",
+  "main": "PS1.P1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artahlil/CS412-Full-Stack-Application-Design-and-Development.git"
+  },
+  "author": "Abdul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artahlil/CS412-Full-Stack-Application-Design-and-Development/issues"
+  },
+  "homepage": "https://github.com/Artahlil/CS412-Full-Stack-Application-Design-and-Development#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
