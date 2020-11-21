@@ -22,7 +22,6 @@ client.flushdb((error, response) => {
         if (match) {
             let cached_data = await asyncGet(locale);
             let cached_obejct = JSON.parse(cached_data);
-            const temp = cached_obejct.temp_f;
             let response = {
                 data: cached_obejct,
                 cached: true
