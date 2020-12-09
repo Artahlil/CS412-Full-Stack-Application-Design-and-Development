@@ -30,8 +30,7 @@ export class AppComponent {
     console.log(`${data.city}`);
   }
   convert(file: Data): string {
-    const j = JSON.stringify(file, null, 2);
-    return j;
+    return JSON.stringify(file, null, 2);;
   }
 
 
