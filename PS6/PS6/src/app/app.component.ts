@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor() { }
   
-  Raw(): void {
+  raw(): void {
     this.all = !this.all;
   }
   
