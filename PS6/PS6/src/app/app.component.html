@@ -7,7 +7,7 @@
     <li (click)="setSelectedCity(data)">{{data.feelslike_c}}</li>
   </ul>
 </div>
-<button (click)="Raw()">JSON Data</button>
+<button (click)="raw()">JSON Data</button>
 <div *ngIf="all===true">
   <ul *ngFor="let data of mock">
     <p>Temp:{{convert(data)}}</p>
