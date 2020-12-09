@@ -24,6 +24,9 @@ export class AppComponent {
       const newCity: Data = {
         city: city.city,
         temp_f: city.temp_f,
+        temp_c: city.temp_c,
+        feelslike_c: city.feelslike_c,
+        feelslike_f: city.feelslike_f
       };
       this.mock.push(newCity);
     } 
@@ -43,7 +46,7 @@ export class AppComponent {
     console.log(`${data.city}`);
   }
   
-  clicked() {
+  click() {
     const url = fetchOptions.url+this.selectedCity.toString()
     const res = Mock[url];
     if (res.length >= 1) {
