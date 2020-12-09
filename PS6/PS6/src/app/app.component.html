@@ -1,4 +1,5 @@
 
+<button (click)="showData()"></button>
 <div *ngIf="fetchData===true">
   <ul *ngFor="let data of mock">
     <li (click)="setSelectedCity(data)">{{data.city}}</li>
@@ -6,7 +7,7 @@
     <li (click)="setSelectedCity(data)">{{data.feelslike_c}}</li>
   </ul>
 </div>
-<button (click)="convert(data)"></button>
+<button (click)="Raw()">JSON Data</button>
 <div *ngIf="all===true">
   <ul *ngFor="let data of mock">
     <p>Temp:{{convert(data)}}</p>
