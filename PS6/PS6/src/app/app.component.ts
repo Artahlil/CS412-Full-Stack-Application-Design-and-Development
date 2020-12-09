@@ -21,7 +21,7 @@ export class AppComponent {
     this.all = !this.all;
   }
   
-  showdData(): void {
+  showData(): void {
     this.fetchData = !this.fetchData;
   }
   
