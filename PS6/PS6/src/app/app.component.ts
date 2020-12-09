@@ -20,7 +20,7 @@ export class AppComponent {
     this.getInfo();
   }
   getInfo():void {
-    for (const city of Mock) {
+    for (const city of mock) {
       const newCity: Data = {
         city: city.city,
         temp_f: city.temp_f,
@@ -48,7 +48,7 @@ export class AppComponent {
   
   click() {
     const url = fetchOptions.url+this.selectedCity.toString()
-    const res = Mock[url];
+    const res = mock[url];
     if (res.length >= 1) {
       const data = res[res.length - 1];
       this.selectedCity = {
