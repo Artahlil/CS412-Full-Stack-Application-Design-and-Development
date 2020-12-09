@@ -14,7 +14,7 @@ export class AppComponent {
   selectedCity = string;
   fetchData = false;
   all = false;
-  clicked: boolean = false;
+  clicked = false;
 
   constructor() { 
     this.getInfo();
