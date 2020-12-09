@@ -16,7 +16,15 @@ export class AppComponent {
   all = false;
 
   constructor() { }
-
+  
+  Raw(): void {
+    this.all = !this.all;
+  }
+  
+  showdData(): void {
+    this.fetchData = !this.fetchData;
+  }
+  
   setSelectedCity(data = Data;): void {
     this.selectedCity = data;
     console.log(`${data.city}`);
