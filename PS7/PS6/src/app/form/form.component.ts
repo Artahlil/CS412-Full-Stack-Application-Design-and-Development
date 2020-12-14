@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  validateAndGetWeather(lat, lon) {
+  retrieveWeather(lat, lon) {
     this.lat = lat;
     this.lon = lon;
     if (lat != null && lon != null) {
