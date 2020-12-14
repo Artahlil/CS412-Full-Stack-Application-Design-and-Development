@@ -24,7 +24,6 @@ export class FormComponent implements OnInit {
       this.weather.getWeather(this.lat, this.lon).subscribe(
         response => {
           console.log(response);
-          // duplicate the result
           this.result.push(response);
           this.result.push(response)
         }
