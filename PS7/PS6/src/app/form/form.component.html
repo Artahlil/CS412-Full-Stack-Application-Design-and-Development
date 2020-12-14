@@ -3,5 +3,5 @@ Enter latitude:
 <input type="number" [(ngModel)]="lat">
 Enter longitude:
 <input type="number" [(ngModel)]="lon">
-<button (click)="validateAndGetWeather(lat, lon)">Retrieve the Weather</button>
+<button (click)="retrieveWeather(lat, lon)">Retrieve the Weather</button>
 <app-result [result]="result"></app-result>
