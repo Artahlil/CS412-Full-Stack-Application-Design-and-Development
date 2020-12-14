@@ -1,4 +1,4 @@
-export class WEATHER {
+export class Weather {
   lat: number;
   lon: number;
   wxDesc: string;
