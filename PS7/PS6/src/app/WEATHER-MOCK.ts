@@ -1,5 +1,5 @@
-import {WEATHER} from './WEATHER';
-export const WEATHER_REPORTS: WEATHER[] =
+import {Weather} from './Weather';
+export const Weather_reports: Weather[] =
   [
     {
       lat: 51.5,
