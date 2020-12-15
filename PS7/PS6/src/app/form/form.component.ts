@@ -7,28 +7,26 @@ import {WeatherService} from '../services/weather.service';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-
-  lat: number;
   lon: number;
+  lat: number;
   result = [];
-
   constructor(private weather: WeatherService) { }
-
+  
   ngOnInit(): void {
   }
-
+  
   retrieveWeather(lat, lon) {
-    this.lat = lat;
     this.lon = lon;
+    this.lat = lat;
     if (lat != null && lon != null) {
       this.weather.getWeather(this.lat, this.lon).subscribe(
         response => {
-          console.log(response);
           this.result.push(response);
           this.result.push(response)
         }
       )
-    } else {
+    } 
+    else {
       throw new Error("InvalidArgumentException");
     }
   }
